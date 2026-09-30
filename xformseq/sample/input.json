@@ -1,0 +1,61 @@
+{
+  "points": [
+    { "x": 0,   "y": 500 },
+    { "x": 0,   "y": 0 },
+    { "x": 500, "y": 0 },
+    { "x": 100, "y": 50 },
+    { "x": 100, "y": 0 }
+  ],
+  "jobs": [
+    {
+      "id": "job-01",
+      "chain": [
+        { "kind": "scale", "sx": 0.3333333333333333, "sy": 0.3333333333333333 },
+        { "kind": "rotate", "deg": -60, "unit": "deg" },
+        { "kind": "translate", "tx": 0, "ty": 500, "unit": "px" }
+      ],
+      "config": { "mode": "compose", "angle_unit": "deg", "length_unit": "px", "normalize": "none" }
+    },
+    {
+      "id": "job-02",
+      "chain": [
+        { "kind": "translate", "tx": 7, "ty": 3, "unit": "px" },
+        { "kind": "rotate", "deg": 15, "unit": "deg" },
+        { "kind": "scale", "sx": 2.5, "sy": 2.5 },
+        { "kind": "rotate", "deg": -15, "unit": "rad" }
+      ],
+      "config": { "mode": "stepwise", "angle_unit": "deg", "length_unit": "px", "normalize": "int" }
+    },
+    {
+      "id": "job-03",
+      "chain": [
+        { "kind": "translate", "tx": 120, "ty": 0, "unit": "px" },
+        { "kind": "translate", "tx": -120, "ty": 0, "unit": "px" },
+        { "kind": "scale", "sx": 0, "sy": 0 },
+        { "kind": "shear", "kx": 0.5 },
+        { "kind": "scale", "sx": -1, "sy": 1 },
+        { "kind": "rotate", "unit": "deg" },
+        { "kind": "mirror", "axis": "z" },
+        { "kind": "translate", "tx": 7, "ty": 0, "unit": "u" }
+      ],
+      "config": { "mode": "stepwise", "angle_unit": "deg", "length_unit": "px", "normalize": "none" }
+    },
+    {
+      "id": "job-04",
+      "chain": [
+        { "kind": "translate", "tx": 100, "ty": 0, "unit": "px" },
+        { "kind": "translate", "tx": 0, "ty": 100, "unit": "px" }
+      ],
+      "config": { "mode": "stepwise", "angle_unit": "deg", "length_unit": "px", "normalize": "none" }
+    },
+    {
+      "id": "job-05",
+      "chain": [
+        { "kind": "rotate", "deg": 90, "unit": "deg" },
+        { "kind": "translate", "tx": 100, "ty": 0, "unit": "px" },
+        { "kind": "rotate", "unit": "deg" }
+      ],
+      "config": { "mode": "stepwise", "angle_unit": "deg", "length_unit": "px", "normalize": "round6" }
+    }
+  ]
+}
